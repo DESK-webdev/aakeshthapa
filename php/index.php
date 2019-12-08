@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>website developing/title>
+  <title>website developing</title>
   <link rel="stylesheet" type="text/css" href="style/2.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
 	<li>harddisk</li>
 </ul>
 <h2>
-<a href ="loginpage.php" target="_blank" title="login here">login here</a>
+f<a href ="loginpage.php" target="_blank" title="login here">login here</a>
 </h2>
 
 <br>
