@@ -18,7 +18,7 @@
 	<li>harddisk</li>
 </ul>
 <h2>
-f<a href ="loginpage.php" target="_blank" title="login here">login here</a>
+<a href ="login.php" target="_blank" title="login here">login here</a>
 </h2>
 
 <br>
