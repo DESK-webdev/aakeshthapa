@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    cursor: auto;
+}
+
+nav a{
+
+
+}
+nav .navbar-brand img{
+    width: 50px;
+}
+
+.cont{
+    position: relative;
+    width:300px;
+    top: 20px;
+    left: auto;
+    margin: auto;
+    background: gray;
+    border: 2px solid black;
+    padding: 50px;
+
+}
+
+
