@@ -6,6 +6,32 @@
   <link rel="stylesheet" type="text/css" href="style/2.css">
 </head>
 <body>
+<nav class="navbar container-fluid navbar-expand-sm navbar-dark bg-dark">
+        <div class="container text-center ml-auto">
+            <a href="images/kazi.jpg" class="navbar-brand"><img src="images/kazi.jpg" alt="private" style="width: 50px;height: 50px;"></a>
+            <a href="#" class="navbar-brand">kaziaakusamu</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarid">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarid">
+        <ul class="navbar-nav ">
+            <li class="nav-list">
+                <a href="index.html"" class="nav-link"> Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-list">
+                <a href="#" class="nav-link">Gallery</a>
+            </li>
+            <li class="nav-list">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+        </ul>
+       
+       </div>
+    </div>
+    </nav>
 <h1> welcome to our website</h1>
 <p><strong>its me <abbr title="Agesh Bahadur Thapa">A.B Thapa </strong></abbr> </p>
 
