@@ -1,0 +1,14 @@
+@font-face{
+    font-family: Abel;
+    src: url(../fonts/Abel/Abel-Regular.ttf);
+}
+
+
+@font-face{
+    src: url(../fonts/Lilita_One/LilitaOne-Regular.ttf);
+    font-family: Lili;
+}
+@font-face{
+    font-family: Roboto;
+    src:url(../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf )
+}

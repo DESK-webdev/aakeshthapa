@@ -1,0 +1,70 @@
+@import url(./fonts.css);
+
+
+.register_form{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    left: 15%;
+    padding: 2rem 1rem;
+    /* height: 70vh; */
+    box-shadow: 1px 10px 20px rgb(71, 69, 66);
+    width: 65%;
+}
+
+.register_form h3{
+    font-size: 1rem;
+    font-family: Roboto;
+    text-align: center;
+
+}
+
+.register_form label{
+    font-size: 1rem;
+    font-family: Abel;
+    padding: 0.7rem;
+    /* margin: 5rem; */
+}
+.register_form input{
+    padding:  0.8rem ;
+    border: 1px solid black;
+    color: black;
+    border-radius: 0.4rem;
+    margin: 0.4rem;
+    width: 90%;
+    outline: none;
+}
+/* .register_form input.placeholder input.name{
+    font-weight: bolder;
+    font-size: ;
+} */
+
+.register_form label input{
+    font-size: 0.8rem;
+    padding: 7px;
+    font-family: Abel;
+}
+.register_form input:hover{
+   cursor: text;
+}
+.gender input:hover{
+    cursor: grab;
+}
+.button{
+    color:rgb(61, 61, 65);
+    background:rgb(196, 194, 199);
+    font-size: large;
+    font-weight:900;
+    border-radius: 0.8rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Roboto;
+    padding:0.3rem 1rem;
+    outline: none;
+}
+.button:hover{
+    color: rgb(0, 0, 0);
+    background-color: dimgray;
+}
