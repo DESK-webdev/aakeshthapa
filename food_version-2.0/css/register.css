@@ -1,6 +1,15 @@
 @import url(./fonts.css);
 
 
+/* Hide HTML5 Up and Down arrows. */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+ 
+input[type="number"] {
+    -moz-appearance: textfield;
+}
 .register_form{
     position: absolute;
     display: flex;
@@ -48,8 +57,7 @@
 .register_form input:hover{
    cursor: text;
 }
-.gender input:hover{
-    cursor: grab;
+
 }
 .button{
     color:rgb(61, 61, 65);
