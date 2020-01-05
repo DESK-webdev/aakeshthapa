@@ -11,17 +11,18 @@
 <link rel="stylesheet" href="../all.css">
 
 <body>
-    <div class="container" id="container">
+    <div class="register-container" id="register-container">
         <div class="form-container">
             <form action="#">
-                <h1>Form as information</h1>
-                <input type="text" name="u-name" placeholder="Name" />
-                <input type="email" name="email" placeholder="Email" />
-                
-                
-                <textarea name="Descrption"  cols="1" placeholder="Description" rows="1"></textarea>
-                <input type="time" name="opn-tme" placeholder="Opening-Time" />
-                <input type="time" name="cls-tme" placeholder="Closing-Time">
+                <h1>Create-Account for student</h1>
+                <label for="#">Student-name:<input type="text" name="u-name" placeholder="Name" /></label>
+                <label for="email">E-mail:<br /><input type="email" name="email" placeholder="Email" /></label>
+
+               <label for="#"> <textarea name="Descrption"  cols="1" placeholder="Description" rows="1"></textarea></label>
+                <label for="#">Opening-Time:
+                    <input type="time" name="opn-tme" placeholder="Opening-Time" /></label>
+              <label for="#">  Closing-time:
+                <input type="time" name="cls-tme" placeholder="Closing-Time"></label>
                 <button>Save</button>
             </form>
 </body>
