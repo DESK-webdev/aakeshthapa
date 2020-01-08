@@ -1,0 +1,41 @@
+.chowmein_container{
+display: flex;
+flex-direction: row;
+margin: 0 0 3rem;
+}
+.chowmein_container img{
+    /* max-height: 400px; */
+}
+.chowmein_container .flex{
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
+/* .chowmein_container .flex h1{
+    text-align: center;
+    margin: 0 0 1 0;
+} */
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.chwomein{
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+ table{
+    border: 1px solid black;
+    /* margin-top: 4rem; */
+}
+ table tr th{
+    border: 1px solid black;
+    /* text-align: center; */
+ }
+    table tr td{
+    border: 1px solid black;
+    text-align: center;
+}
