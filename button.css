@@ -1,0 +1,32 @@
+.box_container{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 14px 28px rgba(5, 5, 5, 0.925), 0 10px 10px rgba(95, 18, 18, 0.22);
+    text-align: center;
+    margin:5rem auto 20rem;
+   border-radius: 4rem;
+}
+
+.box_container a button{
+    padding:3rem;
+    margin: 2rem;
+    color: darkgray;
+    background-color: rgb(65, 70, 68);
+    border-radius: 4rem;
+    background-repeat: no-repeat;
+    transition: transform 40ms ease-in;
+}
+button:focus {
+    outline: none;
+}
+@media screen and (max-width: 1024px){
+    .box_container {
+        left: 20%;
+        margin: 5rem 2rem;
+        right: 5%;
+        width: auto;
+        text-align: center;
+    position: fixed; }
+}

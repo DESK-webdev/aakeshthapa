@@ -1,0 +1,597 @@
+
+@import url(./fonts.css); 
+@import url(./login.css);
+@import url(./hotel-profile.css);
+@import url(./customer-profile.css);
+@import url(./view_it.css);
+@import url(./order_details.css);
+@import url(./fastfood.css);
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+
+}
+
+
+/*---------Colors start---------*/
+
+:root{
+
+    --text-gray:rgb(31, 27, 27); 
+
+
+    /*---------Gradient color start--------*/
+    --yel_or: linear-gradient( 70.6deg,  rgba(250,23,23,0.77) 7.1%, rgba(233,241,16,1) 68.8% );
+    --sky: linear-gradient( 103deg,  rgba(137,247,234,1) 7.3%, rgba(102,117,241,1) 100.2% );
+    --my_color-green-red: linear-gradient( 103deg,  rgb(123, 231, 73) 7.3%, rgb(218, 15, 15) 100.2% );
+    --my-sky: radial-gradient( circle farthest-corner at 10% 20%,  rgba(137,247,254,1) 0%, rgba(102,166,255,1) 90% );
+    --light-sky: linear-gradient( 109.6deg,  rgb(170, 204, 231) 11.2%, rgb(208, 232, 243) 100.2% );
+    /*-------Gradient color end---------*/
+
+
+
+
+
+}
+
+/***********Colors end************/
+
+/*-------- Global classes --------*/
+
+
+h1{
+    font-size:35px;
+    font-family: Livvic;
+    color: var(--text-gray);
+    text-align: center;
+    
+}
+
+h2{
+    font-size:25px;
+    font-family: Livvic;
+    color: var(--text-gray);
+    text-align: center;
+    
+}
+
+h3{
+    font-size:30px;
+    font-family: Abel;
+    color: var(--text-gray);
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: Abel;
+    color: var(--text-gray);
+    font-weight: bold;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    justify-content: space-between;
+    flex-wrap:wrap ;
+}
+
+p{
+    font-size:16px;
+    font-family: Lexend;
+    color: var(--text-gray);
+    text-align: center;
+}
+
+.btn{
+    padding:0.8rem 2rem;
+    border-radius:1rem ;
+    background:var(--my-sky);
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border:1px solid transparent;
+    outline: none;
+    margin: 1rem;
+    transform: translate(-6%);
+}
+.small{
+    padding:0.4rem 0.8rem;
+    border-radius:1rem ;
+    background:rgb(93, 202, 216);
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border:1px solid blue;
+    outline: none;
+    margin: 1rem;
+    transform: translate(-6%);
+}
+
+.btn:hover{
+    background:rgb(149, 158, 207);
+    transition: 0.3s ease;
+    border: none;
+    border: 1px solid rgb(131, 123, 123);
+
+
+}
+
+.btn:active{
+    background-color: var(--my-sky);
+}
+
+th{
+    font-family: Abel;
+    font-weight: bold;
+}
+
+td{
+    font-family: Abel;
+}
+
+.filters{
+    position: relative;
+    left: 81%;
+    transform: translate(-50%);
+}
+
+
+h4{
+    font-size: 1.1rem;
+    font-family:Livvic;
+}
+
+.left{
+    text-align: left;
+    margin-left: 2rem;
+}
+
+.btnright{
+    display: flex;
+    position: relative;
+    left: 90%;
+    transform: translate(-50%);
+    margin: 1rem;   
+}
+
+img{
+    width: 100%;
+    
+}
+
+.mg-1{
+    margin: 1rem;
+}
+
+.f15{
+    font-size: 15px;
+}
+
+.f18{
+    font-size: 18px;
+}
+
+/*********** Global classes end **********/
+
+
+
+
+/*---------Navigation bar start---------*/
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 98%;
+    background: white;
+    z-index: 2;
+    box-shadow: 1px 15px 20px rgb(165, 155, 155);
+    margin: 0rem 6rem auto 0.7rem;
+    height: 0rem;
+    min-height: 6rem;
+    overflow: hidden;
+    transition: 0.4s ease;
+
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav .navbar-brand {
+    margin: 1rem;
+}
+
+
+nav .navbar-brand a{
+    font-family: Josefin;
+
+    
+}
+
+nav .navbar-brand a strong {
+    font-size: 2rem;
+}
+
+
+nav .nav-items{
+    display: flex;
+    margin-top: 1rem;
+}
+
+
+nav .nav-items .nav-link{
+    padding: 1.5rem 1rem;
+    transition: 0.4s ease;
+}
+
+nav .nav-items .nav-link a{
+    padding: 1rem 1rem;
+}
+
+
+
+nav .nav-items .nav-link:hover{
+    background: rgb(85, 72, 85);
+    border-radius: 1rem;
+}
+
+nav .nav-items .nav-link:hover>a{
+color: white;}
+
+
+nav .social{
+    margin: 1.5rem 1rem;
+}
+
+nav .social a{
+    padding: 0 0.3rem;
+}
+
+nav .toggle-collapse{
+    display: none;
+}
+
+nav .toggle-collapse .toggle-icons{
+    position: absolute;
+    left: 90%;
+    cursor: pointer;
+    margin-top: 2.5rem;
+    top: 0%;
+    
+}
+
+nav .toggle-collapse .toggle-icons:hover{
+    background: firebrick;
+}
+
+.collapse{
+    height: 34rem;
+}
+
+nav .toggle-collapse .toggle-icons i{
+   font-size: 1.4rem;
+}
+
+
+/********* Navigation bar end *********/
+
+
+
+/*--------Main site starts---------*/
+
+
+main .container{
+    background-image: url(../assets/burger.jpg);
+    position: relative;
+    margin: 10rem 0 0 0;
+    width: 100%;
+    padding: 10rem 0;
+    background-size:700px;
+    background-repeat: no-repeat;
+
+}
+
+.search-box{
+    position: relative;
+    margin: 0rem 5rem 0 50%;
+    text-align: center;
+    left: 20%;
+    transform: translate(-50%);
+    width: 90%;
+}
+
+.search-box input{
+    padding: 0.9rem;
+    border-radius:0.4rem ;
+    border:1px solid black;
+    outline: none;
+    font-size: 1.1rem;
+    color: black;
+    font-family: Lexend;
+    margin: 0.5rem;
+}
+
+main .site-main{
+    position: relative;
+    background: rgb(163, 163, 197);
+    top: 10%;
+    left: 50%;
+    width: 44%;
+    padding: 1rem;
+    box-shadow: 0 12px 15px rgb(126, 121, 121);
+    border-radius: 1rem;
+}
+
+main .container .site-main .site-title{
+    padding:0 0 0  0rem;
+}
+
+
+
+/* cards start */
+
+
+.products{
+    position: relative;
+    margin: 1rem 0rem;
+    text-align: center;
+    padding: 1rem;
+    z-index: 0;
+    overflow: hidden;
+}
+
+
+
+.carousel{
+    margin:1rem;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    transform: scale(0.99);
+    position: relative;
+}
+
+ .products .product-items{
+    margin: 1.6rem;
+    box-shadow: 0px 10px 20px rgb(122, 114, 114);
+    border:1px solid rgb(123, 123, 134);
+    padding: 0.1rem;
+    background:rgb(245, 244, 245);
+    border-radius: 0.6rem;
+    min-height: 420px;
+    max-height: 600px;
+}
+
+
+ .products .product-items .product-image{
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+    max-height: 340px;
+    min-height: 230px;
+}
+
+
+ .products .product-items img{
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    min-height: 210px;
+    max-height: 235px;
+
+}
+
+
+ .products .product-items img:hover{
+    transform: scale(1.3);
+    
+}
+
+
+/* Cards end */
+
+
+
+
+
+
+/*-------------Footer body starts-------------*/
+footer .footer-body{
+    background: rgb(68, 68, 71);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 0.3rem 0.5rem 0.5rem 0.5rem;
+    height: 300px;
+}
+
+footer .footer-body>div{
+    margin: 0.03rem;
+    background: rgb(39, 37, 37);
+    padding: 1rem;
+}
+
+footer h2{
+    color: rgb(243, 232, 232);
+}
+footer h3{
+    color: rgb(243, 232, 232);
+}
+footer p{
+    padding-top: 0.5rem;
+    color: rgb(148, 143, 143);
+}
+footer .small-contact-us p{
+    font-size: 12px;
+}
+footer .news-notices{
+    padding-bottom: 1rem;
+}
+footer a{
+    color: rgb(216, 35%202, 202);
+    font-size: medium;
+}
+footer a:hover{
+    color: rgb(97, 91, 91) !important;
+}
+footer .copyright{
+    display: flex;
+    justify-content: center;
+    background: rgb(79, 79, 107);
+    outline: none;
+    padding: 1rem;
+}
+footer h4{
+    color: rgb(216, 202, 202);
+}
+
+
+/**************Footer ends************/
+
+@media only screen and (max-width:910px){
+
+    nav .nav-menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .nav-items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .container{
+        background-size:400px !important;
+        margin-top: 4rem !important;
+    }
+    
+    nav .toggle-collapse {
+        display: initial;
+        
+     }
+     .products .product-items img{
+        width: 100%;
+        transition: 0.5s ease-in-out;
+        min-height: 210px;
+        max-height: 380px;
+    
+    }
+}
+
+@media only screen and (max-width:579px){
+
+
+        
+.carousel{
+    margin: 0 3rem;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    transform: scale(0.99);
+    position: relative;
+    left: 40%;
+    transform: translate(-50%);
+}
+
+.products .product-items{
+    margin: 1.6rem;
+    box-shadow: 0px 10px 20px rgb(122, 114, 114);
+    border:1px solid rgb(123, 123, 134);
+    padding: 0.1rem;
+    background:rgb(245, 244, 245);
+    border-radius: 0.6rem;
+    min-height: 530px;
+    max-height: 800px;
+}
+     
+
+
+.products .product-items .product-image{
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    border-radius: 0.6rem;
+    margin-bottom: 1rem;
+    max-height: 640px;
+    min-height: 345px;
+}
+
+
+.products .product-items img{
+    width: 100%;
+    transition: 0.5s ease-in-out;
+    min-height: 300px;
+    max-height: 380px;
+
+}
+
+
+}
+
+@media only screen and (max-width:470px){
+
+
+    .products .product-items .product-image{
+        max-height: 640px;
+        min-height: 285px;
+    }
+    
+    .products .product-items img{
+        min-height: 250px;
+        max-height: 300px;
+    
+    }
+    
+    .products .product-items{
+        min-height: 470px;
+        max-height: 700px;
+    }
+         
+    
+}
+
+@media only screen and (max-width:370px){
+
+
+        
+.carousel{
+    margin: 0;
+    display: grid;
+    grid-template-columns:repeat(4,1fr);
+    transform: scale(0.99);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.products .product-items .product-image{
+    max-height: 640px;
+    min-height: 215px;
+}
+
+.products .product-items img{
+    min-height: 220px;
+    max-height: 250px;
+
+}
+
+.products .product-items{
+    min-height: 370px;
+    max-height: 700px;
+}
+ 
+
+
+
+     
+}
+
+
+
